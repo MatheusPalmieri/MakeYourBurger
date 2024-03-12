@@ -24,8 +24,6 @@
 
 <i>Follow the steps to run the Project on your local machine.</i>
 
-<br />
-
 #### Requirements
 
 - [Node](https://nodejs.org/en/)
