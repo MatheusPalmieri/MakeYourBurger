@@ -1,24 +1,84 @@
-# 03_make_your_burger
+<h1 align="center">Make Your Burger</h1>
 
-## Project setup
+<p align="center">Burger ordering platform with intuitive customer app and integrated dashboard for real-time order tracking at restaurants.</p>
+
+<br />
+
+## Screenshots
+
+#### Home
+
+<img src="src/assets/dashboard.png" width="720px">
+
+#### Request
+
+<img src="src/assets/request.png" width="720px">
+
+#### Dashboard
+
+<img src="src/assets/dashboard.png" width="720px">
+
+<br />
+
+## Running the Application
+
+<br />
+<i>Follow the steps to run the Project on your local machine.</i>
+<br />
+
+#### Requirements
+
+- [Node](https://nodejs.org/en/)
+- [Yarn](https://classic.yarnpkg.com/lang/en/) or [Npm](https://www.npmjs.com/)
+
+#### Clone the repository and navigate to the folder
+
 ```
-npm install
+$ git clone https://github.com/MatheusPalmieri/make-your-burger && cd make-your-burger
 ```
 
-### Compiles and hot-reloads for development
+#### Installing necessary dependencies
+
 ```
-npm run serve
+$ npm install or yarn
 ```
 
-### Compiles and hot-reloads for development with backend
+#### Run Frontend
+
 ```
-npm run backend
+$ npm run server
 ```
 
-### Compiles and minifies for production
+#### Run Backend
+
 ```
-npm run build
+$ npm run backend
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<i>Open the browser on the page "http://localhost:8080" to view.</i>
+
+<br />
+
+## Technologies
+
+<p>The following tools were used in the project:</p>
+
+**Frontend**: Vue, JavaScript, and CSS.
+<br />
+**Backend**: JSON Server.
+
+<br />
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+<br />
+
+## Author
+
+Created by <b>`Matheus Palmieri`</b>👨‍💻
+
+<br />
+
+<p align=\"center\">📜 Make Your Burger V1.1.0 🚀</p>
