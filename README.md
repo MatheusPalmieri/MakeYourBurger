@@ -8,7 +8,7 @@
 
 #### Home
 
-<img src="src/assets/dashboard.png" width="720px">
+<img src="src/assets/home.png" width="720px">
 
 #### Request
 
