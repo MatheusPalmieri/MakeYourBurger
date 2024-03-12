@@ -22,8 +22,8 @@
 
 ## Running the Application
 
-<br />
 <i>Follow the steps to run the Project on your local machine.</i>
+
 <br />
 
 #### Requirements
