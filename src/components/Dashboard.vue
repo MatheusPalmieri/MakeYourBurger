@@ -34,7 +34,6 @@
             class="status"
             @change="updateBurger($event, burger.id)"
           >
-            <option value="">Select</option>
             <option
               v-for="statusItem in status"
               :key="statusItem.id"

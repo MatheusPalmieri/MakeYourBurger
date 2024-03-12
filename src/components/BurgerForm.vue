@@ -154,7 +154,7 @@ export default {
       this.name = "";
       this.meat = "";
       this.bread = "";
-      this.options = "";
+      this.options = [];
     },
   },
 
