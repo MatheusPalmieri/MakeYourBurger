@@ -1,7 +1,7 @@
 <template>
   <Banner />
   <div class="container">
-    <h1>Monte o seu burger:</h1>
+    <h1>Make Your <span style="color: #fcba03">Burger</span></h1>
 
     <BurgerForm />
   </div>

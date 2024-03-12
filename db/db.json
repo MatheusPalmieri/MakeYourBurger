@@ -1,80 +1,80 @@
 {
-  "ingredientes": {
-    "paes": [
+  "ingredients": {
+    "breads": [
       {
         "id": 1,
-        "tipo": "Italiano Branco"
+        "type": "White Italian"
       },
       {
         "id": 2,
-        "tipo": "3 Queijos"
+        "type": "3 Cheeses"
       },
       {
         "id": 3,
-        "tipo": "Parmesão e Orégano"
+        "type": "Parmesan & Oregano"
       },
       {
         "id": 4,
-        "tipo": "Integral"
+        "type": "Whole Wheat"
       }
     ],
-    "carnes": [
+    "meats": [
       {
         "id": 1,
-        "tipo": "Maminha"
+        "type": "Beef rump"
       },
       {
         "id": 2,
-        "tipo": "Alcatra"
+        "type": "Rump"
       },
       {
         "id": 3,
-        "tipo": "Picanha"
+        "type": "Rump steak"
       },
       {
         "id": 4,
-        "tipo": "Veggie burger"
+        "type": "Veggie Burger"
       }
     ],
-    "opcionais": [
+    "options": [
       {
         "id": 1,
-        "tipo": "Bacon"
+        "type": "Bacon"
       },
       {
         "id": 2,
-        "tipo": "Cheddar"
+        "type": "Cheddar"
       },
       {
         "id": 3,
-        "tipo": "Salame"
+        "type": "Salami"
       },
       {
         "id": 4,
-        "tipo": "Tomate"
+        "type": "Tomato"
       },
       {
-        "id": 4,
-        "tipo": "Cebola roxa"
+        "id": 5,
+        "type": "Red Onion"
       },
       {
-        "id": 4,
-        "tipo": "Pepino"
+        "id": 6,
+        "type": "Cucumber"
       }
     ]
   },
   "status": [
     {
       "id": 1,
-      "tipo": "Solicitado"
+      "type": "Requested"
     },
     {
       "id": 2,
-      "tipo": "Em produção"
+      "type": "In Production"
     },
     {
       "id": 3,
-      "tipo": "Finalizado"
+      "type": "Finished"
     }
   ],
   "burgers": []

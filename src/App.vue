@@ -1,18 +1,22 @@
 <template>
-  <NavBar :logo="logo" :alt="alt" />
+  <main class="content">
+    <section>
+      <Navbar :logo="logo" :alt="alt" />
 
-  <router-view />
+      <router-view />
+    </section>
 
-  <Footer />
+    <Footer />
+  </main>
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
+import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   components: {
-    NavBar,
+    Navbar,
     Footer,
   },
   data() {
@@ -30,6 +34,14 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.content {
+  min-height: 100dvh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {

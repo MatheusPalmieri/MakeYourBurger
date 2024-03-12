@@ -10,7 +10,7 @@ export default {
 
 <style scoped>
 #banner {
-  height: 500px;
+  height: 450px;
   background-image: url("/public/img/burger.jpg");
   background-position: 0;
   background-size: cover;
@@ -25,5 +25,6 @@ export default {
   font-size: 60px;
   background: #222;
   padding: 20px 40px;
+  border-radius: 0 10px 10px 0;
 }
 </style>

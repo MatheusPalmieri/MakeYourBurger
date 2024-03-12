@@ -4,12 +4,12 @@
   <div id="table">
     <div>
       <div id="table-heading">
-        <div class="order-id">#:</div>
-        <div>Clientes:</div>
-        <div>Pão:</div>
-        <div>Carne:</div>
-        <div>Opcionais:</div>
-        <div>Ações:</div>
+        <div class="order-id">#</div>
+        <div>Clients</div>
+        <div>Bread</div>
+        <div>Meat</div>
+        <div>Options</div>
+        <div>Actions</div>
       </div>
     </div>
 
@@ -22,31 +22,46 @@
 
         <div>
           <ul>
-            <li v-for="(opcional, index) in burger.options" :key="index">
-              {{ opcional }}
+            <li v-for="(optional, index) in burger.options" :key="index">
+              {{ optional }}
             </li>
           </ul>
         </div>
 
-        <div>
+        <div class="actions">
           <select
             name="status"
             class="status"
             @change="updateBurger($event, burger.id)"
           >
-            <option value="">Selecione</option>
+            <option value="">Select</option>
             <option
               v-for="statusItem in status"
               :key="statusItem.id"
-              :value="statusItem.tipo"
-              :selected="burger.status == statusItem.tipo"
+              :value="statusItem.type"
+              :selected="burger.status == statusItem.type"
             >
-              {{ statusItem.tipo }}
+              {{ statusItem.type }}
             </option>
           </select>
 
           <button class="delete-button" @click="deleteBurger(burger.id)">
-            Cancelar
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-trash-x"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16zm-9.489 5.14a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z"
+              />
+              <path
+                d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -95,7 +110,7 @@ export default {
 
       this.getRequests();
 
-      this.message = `Pedido removido com sucesso!`;
+      this.message = `Request Nº ${res.id} was deleted!`;
 
       setTimeout(() => (this.message = ""), 2000);
     },
@@ -113,9 +128,9 @@ export default {
 
       const res = await req.json();
 
-      this.message = `Pedido Nº ${res.id} foi atualizado para ${res.status}!`;
+      this.message = `Request Nº ${res.id} was updated to ${res.status}!`;
 
-      setTimeout(() => (this.message = ""), 2000);
+      setTimeout(() => (this.message = ""), 3000);
     },
   },
   mounted() {
@@ -159,19 +174,29 @@ export default {
   width: 5%;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 select {
+  height: 40px;
   padding: 12px 6px;
-  margin-right: 12px;
+  border-radius: 5px;
 }
 
 .delete-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #222;
-  color: #fcba03;
-  font-weight: bold;
   border: 2px solid #222;
+  color: #fcba03;
   padding: 10px;
-  font-size: 16px;
-  margin: 0 auto;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
 }

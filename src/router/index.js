@@ -8,7 +8,7 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/pedidos',
+    path: '/requests',
     name: 'request',
     component: () => import('../views/RequestView.vue')
   }
